@@ -1,0 +1,135 @@
+<h1>Form Input Types</h1>
+
+<form class="" action="index.html" method="post">
+  <label for="name">Name (4 to 8 characters):</label>
+  <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+  <br>
+  <hr>
+  <label for="">Button</label>
+  <input type="button" value="Click Me">
+  <br>
+  <hr>
+  <p>Choose your monster's features:</p>
+  <input type="checkbox" id="scales" name="scales" checked>
+  <label for="scales">Scales</label>
+  <input type="checkbox" id="horns" name="horns">
+  <label for="horns">Horns</label>
+  <br>
+  <hr>
+  <p>Choose your monster's colors:</p>
+  <input type="color" id="head" name="head" value="#e66465">
+  <label for="head">Head</label>
+  <input type="color" id="body" name="body" value="#f6b73c">
+  <label for="body">Body</label>
+  <br>
+  <hr>
+  <label for="start">Start date:</label>
+  <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+  <br>
+  <hr>
+  <label for="meeting-time">Choose a time for your appointment:</label>
+  <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+  <br>
+  <hr>
+  <label for="email">Enter your globex.com email:</label>
+  <input type="email" id="email" pattern=".+@globex.com" size="30" required>
+  <br>
+  <hr>
+  <label for="avatar">Choose a profile picture:</label>
+  <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+  <br>
+  <hr>
+  <input id="prodId" name="prodId" type="hidden" value="xm234jq">
+  <br>
+  <hr>
+  <p>Sign in to your account:</p>
+  <label for="userId">User ID</label>
+  <input type="text" id="userId" name="User">
+  <br>
+  <hr>
+  <input type="image" id="image" alt="Login" src="Kevin.jpg">
+  <br>
+  <hr>
+  <label for="start">Start month:</label>
+  <input type="month" id="start" name="start" min="2018-03" value="2018-05">
+  <br>
+  <hr>
+  <label for="tentacles">Number of tentacles (10-100):</label>
+  <input type="number" id="tentacles" name="tentacles" min="10" max="100">
+  <br>
+  <hr>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username">
+  <label for="pass">Password (8 characters minimum):</label>
+  <input type="password" id="pass" name="password" minlength="8" required>
+  <input type="submit" value="Sign in">
+  <br>
+  <hr>
+  <p>Select a maintenance drone:</p>
+  <input type="radio" id="huey" name="drone" value="huey" checked>
+  <label for="huey">Huey</label>
+
+  <input type="radio" id="dewey" name="drone" value="dewey">
+  <label for="dewey">Dewey</label>
+  <br>
+  <hr>
+  <p>Select a maintenance drone:</p>
+  <input type="radio" id="huey" name="drone" value="huey" checked>
+  <label for="huey">Huey</label>
+  <input type="radio" id="dewey" name="drone" value="dewey">
+  <label for="dewey">Dewey</label>
+  <input type="radio" id="louie" name="drone" value="louie">
+  <label for="louie">Louie</label>
+  <br>
+  <hr>
+  <p>Audio settings:</p>
+  <input type="range" id="start" name="volume" min="0" max="11">
+  <label for="volume">Volume</label>
+  <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
+  <label for="cowbell">Cowbell</label>
+  <br>
+  <hr>
+  <form>
+    <div class="controls">
+      <label for="id">User ID:</label>
+      <input type="text" id="id" name="id" />
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+  <br>
+  <hr>
+  <label for="site-search">Search the site:</label>
+  <input type="search" id="site-search" name="q" aria-label="Search through site content">
+  <button>Search</button>
+  <br>
+  <hr>
+  <input type="submit" value="Send Request">
+  <br>
+  <hr>
+  <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+  <small>Format: 123-456-7890</small>
+  <br>
+  <hr>
+  <label for="name">Name (4 to 8 characters):</label>
+  <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+  <br>
+  <hr>
+  <label for="appt">Choose a time for your meeting:</label>
+  <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+  <small>Office hours are 9am to 6pm</small>
+  <br>
+  <hr>
+  <label for="url">Enter an https:// URL:</label>
+  <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+  <br>
+  <hr>
+  <label for="week">Choose a week in May or June:</label>
+  <input type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
+  <br>
+  <hr>
+  <label for="message">Your message:</label>
+  <br>
+  <textarea name="name" rows="8" cols="80"></textarea>
+</form>
